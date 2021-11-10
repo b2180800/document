@@ -1,0 +1,33 @@
+OpenFDTD 2 6
+xmesh = -4.8E-05 4800 4.8E-05
+ymesh = -1.6E-05 1600 1.6E-05
+zmesh = -5E-06 500 5E-06
+material = 1 12 0 1 0 Si
+material = 1 2 0 1 0 SiO2
+geometry = 3 1 -4.8E-05 4.8E-05 -1.6E-05 1.6E-05 -5E-06 5E-06
+geometry = 2 1 -2.5E-05 2.5E-05 -8.25E-06 8.25E-06 -1.1E-07 1.1E-07
+geometry = 2 1 2.5E-05 4.8E-05 3.75E-06 8.25E-06 -1.1E-07 1.1E-07
+geometry = 2 1 -4.8E-05 -2.5E-05 3.75E-06 8.25E-06 -1.1E-07 1.1E-07
+geometry = 2 1 2.5E-05 4.8E-05 -8.25E-06 -3.75E-06 -1.1E-07 1.1E-07
+geometry = 2 1 -4.8E-05 -2.5E-05 -8.25E-06 -3.75E-06 -1.1E-07 1.1E-07
+feed = Y -4.8E-05 0 0 1 0 50
+point = X 0 0 0 -X
+abc = 1 5 2 1e-5
+frequency1 = 1.881e14 1.881e14 1
+frequency2 = 1.881e14 1.881e14 1
+solver = 10000 10 1e-3
+plotiter = 1
+plotfeed = 1
+plotpoint = 1
+plotspara = 1
+freqdiv = 40
+plotnear2d = H Z 0
+near2ddim = 1 1
+near2ddb = 1
+near2dframe = 10
+near2dcontour = 0
+near2dobj = 1
+near2dnoinc = 1
+window2d = 750 500 15 0
+window3d = 600 600 15 60 30
+end
