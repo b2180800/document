@@ -1,0 +1,35 @@
+OpenFDTD 2 6
+title = 2x2 MMI
+xmesh = -1.75E-06 120 1.75E-06
+ymesh = 0 800 2E-05
+zmesh = -5E-07 40 5E-07
+material = 1 12 0 1 0 Si
+material = 1 2 0 1 0 SiO2
+geometry = 3 1 -1.75E-06 1.75E-06 0 2E-05 -5E-07 5E-07
+name = Si wire waveguide
+geometry = 2 1 -1.105E-06 1.105E-06 1.75E-06 1.825E-05 -1.1E-07 1.1E-07
+geometry = 2 1 -3.05E-07 -1.105E-06 0 1.75E-06 -1.1E-07 1.1E-07
+geometry = 2 1 3.05E-07 1.105E-06 0 1.75E-06 -1.1E-07 1.1E-07
+geometry = 2 1 3.05E-07 1.105E-06 1.825E-05 2E-05 -1.1E-07 1.1E-07
+geometry = 2 1 -3.05E-07 -1.105E-06 1.825E-05 2E-05 -1.1E-07 1.1E-07
+feed = X -7E-07 1E-06 0 1 0 50
+abc = 1 5 2 1e-5
+frequency1 = 1.98e14 1.98e14 1
+frequency2 = 1.98e14 1.98e14 1
+solver = 10000 10 1e-3
+plotiter = 1
+plotfeed = 1
+plotpoint = 1
+plotspara = 1
+freqdiv = 40
+plotnear2d = H Z 0
+plotnear2d = E X 0
+near2ddim = 1 1
+near2ddb = 1
+near2dframe = 10
+near2dcontour = 1
+near2dobj = 1
+near2dnoinc = 0
+window2d = 750 500 15 0
+window3d = 600 600 15 60 30
+end
